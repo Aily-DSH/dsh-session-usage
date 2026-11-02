@@ -107,6 +107,14 @@ tools/gen-holidays.mjs  重新生成节假日表
 cordis.patch.yml   插入插件行
 ```
 
+## 赞赏
+
+如果这个插件帮你省了钱，欢迎扫码请作者喝一杯 ☕（纯属自愿，不影响使用和更新）
+
+<p align="center">
+  <img src="assets/reward-qr.png" alt="赞赏码" width="260">
+</p>
+
 ## English
 
 **dsh-session-usage** shows per-conversation token usage and cost for DeepSeek Harness. It parses the local session logs directly (`$DSH_HOME/sessions/.../session.v4.jsonl.zstd`, an append-only sequence of zstd frames, decompressed frame by frame), so past conversations are included rather than starting from installation. A settings section renders a sortable table with input / cache-read / cache-write / output tokens and an estimated CNY cost that follows the official peak/off-peak rule (weekday 09:00–12:00 and 14:00–18:00 Asia/Shanghai are peak, everything else half price; Chinese holidays accounted for). The same number is painted onto sidebar session rows. Parsed data is cached in `~/.dsh/dsh-session-usage/cache.json`.
@@ -115,6 +123,8 @@ cordis.patch.yml   插入插件行
 dsh plugin --profile desktop add "git+https://github.com/Aily-DSH/dsh-session-usage.git"
 # restart the client once
 ```
+
+**Sponsor:** if this plugin saved you money, you can buy the author a coffee — scan `assets/reward-qr.png`.
 
 ## License
 
