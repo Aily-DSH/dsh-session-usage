@@ -1,0 +1,7 @@
+# dsh-session-usage bundle patch: inserts its plugin row into the web roster.
+# The single row mounts BOTH halves — the host side (session-log scan and the
+# dsh-session-usage.* JSON routes) and the browser side (scanned from the
+# `dsh.client` manifest field and served from this package's lib/client.js).
+- insert:
+    - id: session-usage
+      name: 'dsh-session-usage'

@@ -1,0 +1,59 @@
+{
+  "name": "dsh-session-usage",
+  "version": "0.1.0",
+  "description": "Per-conversation token usage for the dsh Web GUI: every recorded conversation with its input, cache-read, cache-write, and output token totals, parsed straight from the local session logs",
+  "type": "module",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "icon.svg"
+  ],
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.1-rc.2"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-renderer"
+      ],
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh": ">=0.2.1-rc.2"
+  },
+  "license": "MIT",
+  "author": "Aily-DSH",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aily-DSH/dsh-session-usage.git"
+  },
+  "homepage": "https://github.com/Aily-DSH/dsh-session-usage#readme",
+  "bugs": {
+    "url": "https://github.com/Aily-DSH/dsh-session-usage/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "token-usage",
+    "cost",
+    "pricing",
+    "zstd"
+  ]
+}
