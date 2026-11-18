@@ -1,6 +1,6 @@
 {
   "name": "dsh-session-usage",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Per-conversation token usage for the dsh Web GUI: every recorded conversation with its input, cache-read, cache-write, and output token totals, parsed straight from the local session logs",
   "type": "module",
   "engines": {
